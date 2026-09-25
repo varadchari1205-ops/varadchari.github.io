@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varad Umesh Chari | Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 0;
+      border-bottom: 1px solid #334155;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-info {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+
+    .contact-info a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin: 2.5rem 0;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+
+    .about p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-tag {
+      background-color: var(--card-bg);
+      border: 1px solid #334155;
+      color: var(--text-main);
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .card-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid #334155;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .card .subtitle {
+      color: var(--accent);
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    .cert-list li {
+      background-color: var(--card-bg);
+      border-left: 3px solid var(--accent);
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.5rem;
+      border-radius: 0 6px 6px 0;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 3rem;
+      border-top: 1px solid #334155;
+      padding-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- HEADER -->
+    <header>
+      <h1>Varad Umesh Chari</h1>
+      <p style="color: var(--accent); font-weight: 500;">Computer Engineering Student</p>
+      <div class="contact-info">
+        <span>📍 Margao, Goa</span>
+        <span>📧 <a href="mailto:varadcharil205@gmail.com">varadcharil205@gmail.com</a></span>
+        <span>📞 +91 9657804935</span>
+        <span>🔗 <a href="#">LinkedIn</a></span>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        Computer Engineering student with a strong foundation in programming, problem-solving, and software development. Passionate about applying technical knowledge to real-world projects and continuously expanding skills through learning and hands-on experience. Eager to contribute to innovative technology solutions while growing professionally in a dynamic engineering environment.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+      <h2>Skills & Expertise</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">C / C++</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">HTML & CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">MySQL / SQL</span>
+        <span class="skill-tag">UI/UX (Figma)</span>
+        <span class="skill-tag">Object-Oriented Programming</span>
+        <span class="skill-tag">Problem Solving</span>
+        <span class="skill-tag">Critical Thinking</span>
+        <span class="skill-tag">Time Management</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+      <h2>Projects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Inventory System</h3>
+          <div class="subtitle">Management Solution</div>
+          <p>Developed an Inventory Management System to efficiently track, organize, and manage inventory, including stock, purchasing, sales, and restocking.</p>
+        </div>
+        <div class="card">
+          <h3>Attendance Management System</h3>
+          <div class="subtitle">Automated Tracking</div>
+          <p>Created an Attendance Management System that simplifies attendance tracking through automated tracking and reporting processes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section>
+      <h2>Certifications & Internships</h2>
+      <ul class="cert-list">
+        <li>Introduction to Industrial Internet of Things (NPTEL)</li>
+        <li>Game Development in PyGame</li>
+        <li>AI-ML Virtual Internship</li>
+        <li>SQL and Database Management Systems Virtual Internship</li>
+      </ul>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+      <h2>Education</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>B.E. Computer Engineering</h3>
+          <div class="subtitle">2023 – Present</div>
+          <p>Shree Rayeshwar Institute of Engineering and Information Technology, Shiroda, Goa</p>
+          <p style="margin-top: 0.5rem; color: var(--accent);">CGPA: 8.4</p>
+        </div>
+        <div class="card">
+          <h3>Higher Secondary Education</h3>
+          <div class="subtitle">2021 – 2023</div>
+          <p>Rosary Higher Secondary School, Navelim, Goa</p>
+          <p style="margin-top: 0.5rem; color: var(--text-muted);">Score: 70.81%</p>
+        </div>
+        <div class="card">
+          <h3>Secondary Education</h3>
+          <div class="subtitle">Completed 2021</div>
+          <p>Regina Martyrum High School, Assolna, Goa</p>
+          <p style="margin-top: 0.5rem; color: var(--text-muted);">Score: 87.33%</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© Varad Umesh Chari. Built for showcase.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
